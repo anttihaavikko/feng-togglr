@@ -1,5 +1,6 @@
 # feng-togglr
-Chrome extension which adds Toggl button to Feng Office
+Chrome extension which adds Toggl button to Feng Office 
+
 ![screenshot](images/screenshot.png)
 
 ## Installation
