@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Feng Togglr",
+  "description": "Adds Toggl button to feng",
+  "version": "0.1",
+
+  "content_scripts": [
+      {
+      "matches": ["https://feng.focusflow.net/*"],
+      "css": ["style.css"],
+      "js": ["jquery.min.js", "script.js"]
+    }
+  ],
+  "permissions": [
+    "*://*.toggl.com/*"
+  ]
+}
