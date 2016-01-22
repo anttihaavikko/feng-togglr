@@ -4,6 +4,10 @@
   "name": "Feng Togglr",
   "description": "Adds Toggl button to feng",
   "version": "0.1",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
 
   "content_scripts": [
       {
@@ -13,6 +17,7 @@
     }
   ],
   "permissions": [
-    "*://*.toggl.com/*"
+    "*://*.toggl.com/*",
+    "storage"
   ]
 }
