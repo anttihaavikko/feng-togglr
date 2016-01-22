@@ -1,5 +1,3 @@
-alert("here");
-
 function save_options() {
   alert("saving");
   var api_token = document.getElementById('api_token').value;
@@ -26,5 +24,3 @@ function restore_options() {
 
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
-
-alert("sup");
