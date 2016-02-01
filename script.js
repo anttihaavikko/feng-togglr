@@ -28,7 +28,7 @@ $.start = function() {
 
       var task_id = $(".prop-col-div").eq(0).text().split(":")[1].trim();
       var task_name = $(".coViewTitleContainer td").eq(0).text().trim();
-      var project_name = $(".mname").text().trim();
+      var project_name = $(".mname").eq(0).text().trim();
 
       $.ajax({
         url: 'https://www.toggl.com/api/v8/time_entries/start',
