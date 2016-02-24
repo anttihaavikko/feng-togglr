@@ -7,3 +7,34 @@
   text-align: center;
   color: white;
 }
+
+#copy-button {
+  display: block;
+  margin: 0 0 10px;
+  background: #666;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#copy-button:before {
+  display: block;
+  background: #333;
+  border-radius: 5px;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+  content: '-- Copied --';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s all;
+}
+
+#copy-button.done:before {
+  opacity: 1;
+}
