@@ -11,13 +11,15 @@
 
   "content_scripts": [
       {
-      "matches": ["https://feng.focusflow.net/*"],
+      "matches": ["*://feng.focusflow.net/*"],
       "css": ["style.css"],
       "js": ["jquery.min.js", "clipboard.min.js", "script.js"]
     }
   ],
   "permissions": [
-    "<all_urls>",
+    "http://*/",
+    "*://*.toggl.com/*",
+    "*://toggl.com/*",
     "storage"
   ]
 }
